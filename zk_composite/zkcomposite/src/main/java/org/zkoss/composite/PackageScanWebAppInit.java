@@ -23,7 +23,6 @@ public class PackageScanWebAppInit implements WebAppInit {
 	/* (non-Javadoc)
 	 * @see org.zkoss.zk.ui.util.WebAppInit#init(org.zkoss.zk.ui.WebApp)
 	 */
-	@Override
 	public void init(WebApp wapp) throws Exception {
 		String pkgStrs = Library.getProperty(Composites.LIB_PROPERTY_SCAN_PACKAGE);
 		if(pkgStrs==null || (pkgStrs = pkgStrs.trim()).isEmpty()){

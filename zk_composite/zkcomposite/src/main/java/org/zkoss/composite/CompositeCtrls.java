@@ -69,19 +69,16 @@ public final class CompositeCtrls {
 	
 	
 	private static final CompositeDefHandler DEFAULT_HANDLER = new CompositeDefHandler() {
-		@Override
 		public String getDefaultMacroURI(Class<?> compClz) {
 			String pkgPath = compClz.getPackage().getName().replace('.', '/');
 			String path = pkgPath+"/"+compClz.getSimpleName()+".zul";
 			return path;
 		}
 		
-		@Override
 		public String getDefaultComponentName(Class<?> compClz) {
 			return null;
 		}
 
-		@Override
 		public String getMacroURIContent(String macroURI, Class<?> compClass, WebApp webapp){
 			//get text according to class path
 			String text = CompositeCtrls.readTextContentIfAny(compClass.getResource(macroURI));

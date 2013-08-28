@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.zkoss.composite</groupId>
 	<artifactId>zkcomposite</artifactId>
-	<version>0.8.0</version>
+	<version>0.8.1</version>
 	<properties>
 		<zk.version>6.0.0</zk.version>
 		<maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
@@ -35,7 +35,7 @@
 		<dependency>
 			<groupId>org.zkoss.composite</groupId>
 			<artifactId>zkcpr</artifactId>
-			<version>0.8.0</version>
+			<version>0.8.1</version>
 		</dependency>
 	</dependencies>
 	<build>
